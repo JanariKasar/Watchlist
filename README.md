@@ -36,7 +36,7 @@ curl -X POST -H "Content-Type: application/json" -d "{\"firstName\":\"Osama\",\"
 ```
 curl -X PUT -H "Content-Type: application/json" -d "{\"firstName\":\"Osama\",\"lastName\":\"Bin Laden\",\"endDate\": \"2023-09-24T20:00:00\"}" http://localhost:8080/sanctions/1
 ```
-#### Deleting a person
+#### Deleting a person with id 1
 ```
-curl -X DELETE http://localhost:8080/sanctions/10
+curl -X DELETE http://localhost:8080/sanctions/1
 ```
