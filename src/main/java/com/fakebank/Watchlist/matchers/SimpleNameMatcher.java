@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
- * Name matcher that assumes name is spelled correctly either in regular order or in reverse order
+ * Name matcher that assumes name is spelled correctly ignoring case
  */
 @Component
 public class SimpleNameMatcher implements NameMatcher {
