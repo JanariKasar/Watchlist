@@ -63,4 +63,9 @@ public class SanctionsServiceIntegrationTests {
         assertNotNull(sanctionsService.findSanctionedMatch("John S Doe"));
     }
 
+    @Test
+    public void findSanctionedMatch_doNotMatchExpiredName() {
+        assertNull(sanctionsService.findSanctionedMatch("Expired Name"));
+    }
+
 }
